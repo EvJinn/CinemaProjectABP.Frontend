@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HallRoutingModule } from './hall-routing.module';
 import { HallComponent } from './hall.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -10,8 +11,8 @@ import { HallComponent } from './hall.component';
     HallComponent
   ],
   imports: [
-    CommonModule,
-    HallRoutingModule
+    HallRoutingModule,
+    SharedModule
   ]
 })
 export class HallModule { }

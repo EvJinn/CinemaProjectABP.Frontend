@@ -15,6 +15,27 @@ function configureRoutes(routesService: RoutesService) {
         order: 1,
         layout: eLayoutType.application,
       },
+      {
+        path: '/cinema',
+        name: '::Menu:Cinema',
+        iconClass: 'fas fa-film',
+        order: 2,
+        layout: eLayoutType.application,
+      },
+      {
+        path: '/halls',
+        name: '::Menu:Halls',
+        parentName: '::Menu:Cinema',
+        iconClass: 'fas fa-door-closed',
+        layout: eLayoutType.application,
+      },
+      {
+        path: '/seats',
+        name: '::Menu:Seats',
+        parentName: '::Menu:Cinema',
+        iconClass: 'fas fa-chair',
+        layout: eLayoutType.application,
+      }
     ]);
   };
 }
